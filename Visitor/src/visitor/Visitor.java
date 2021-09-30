@@ -32,7 +32,6 @@ public class Visitor {
         
         Nokia3310 nokia  =new Nokia3310();
         nokia.call("+900535");
-        
        
     }
 }
