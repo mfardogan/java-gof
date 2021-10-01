@@ -17,17 +17,24 @@ public class Mediator {
     public static void main(String[] args) {
         // TODO code application logic here
         
+         /*
+        Daha konforlu bir kullanım için video çekildikten sonra 
+        user.setMediator(this); değişikliği yapılmıştır.
+        Bu saye de User için nesne örneği alındığı yerde 
+        kurucu parametresi vermeye gerek kalmayacaktır.
+        */
+         
         IChatMediator room = new ChatRoom();
-        User ahmet = new Ahmet(room);
+        User ahmet = new Ahmet();
         room.addUser(ahmet);
 
-        User mehmet = new Mehmet(room);
+        User mehmet = new Mehmet();
         room.addUser(mehmet);
 
-        User yasemin = new Yasemin(room);
+        User yasemin = new Yasemin();
         room.addUser(yasemin);
         
-        User faruk = new Faruk(room);
+        User faruk = new Faruk();
         room.addUser(faruk);
         
         ahmet.send("Selam millet!");

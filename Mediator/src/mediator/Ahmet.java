@@ -11,8 +11,14 @@ package mediator;
  */
 public class Ahmet extends  User{
     
-    public Ahmet(IChatMediator mediator) {
-        super("Ahmet", mediator);
+     /*
+        Daha konforlu bir kullanım için video çekildikten sonra 
+        user.setMediator(this); değişikliği yapılmıştır.
+        Bu saye de User için nesne örneği alındığı yerde 
+        kurucu parametresi vermeye gerek kalmayacaktır.
+        */
+    public Ahmet() {
+        super("Ahmet");
     }
     
 }

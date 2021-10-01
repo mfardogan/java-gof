@@ -18,6 +18,13 @@ public class ChatRoom implements  IChatMediator{
     
     @Override
     public void addUser(User user) {
+        /*
+        Daha konforlu bir kullanım için video çekildikten sonra 
+        user.setMediator(this); değişikliği yapılmıştır.
+        Bu saye de User için nesne örneği alındığı yerde 
+        kurucu parametresi vermeye gerek kalmayacaktır.
+        */
+        user.setMediator(this);
         users.add(user);
     }
 

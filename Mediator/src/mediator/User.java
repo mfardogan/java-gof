@@ -16,11 +16,14 @@ public class User {
     public String getNick() {
         return nick;
     }
-    private final IChatMediator mediator;
+    private IChatMediator mediator;
 
-    public User(String nick, IChatMediator mediator) {
-        this.nick = nick;
+    public void setMediator(IChatMediator mediator) {
         this.mediator = mediator;
+    }
+
+    public User(String nick) {
+        this.nick = nick;
     }
 
     public void send(String message) {

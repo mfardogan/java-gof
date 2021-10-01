@@ -11,8 +11,13 @@ package mediator;
  */
 public class Yasemin extends  User{
     
-    public Yasemin(IChatMediator mediator) {
-        super("Yasemin", mediator);
+     /*
+        Daha konforlu bir kullanım için video çekildikten sonra 
+        user.setMediator(this); değişikliği yapılmıştır.
+        Bu saye de User için nesne örneği alındığı yerde 
+        kurucu parametresi vermeye gerek kalmayacaktır.
+        */
+    public Yasemin() {
+        super("Yasemin");
     }
-    
 }
