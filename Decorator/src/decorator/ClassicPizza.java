@@ -17,9 +17,7 @@ public class ClassicPizza extends Pizza{
         getPieces().add("Malzeme-1");
         getPieces().add("Malzeme-2");
         getPieces().add("Malzeme-3");
-    }
-
-    
+    } 
     
     @Override
     public double price() {

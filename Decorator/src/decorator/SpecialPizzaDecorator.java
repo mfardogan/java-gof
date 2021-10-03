@@ -25,6 +25,6 @@ public class SpecialPizzaDecorator extends  PizzaDecorator{
 
     @Override
     public double price() {
-       return getPizza().price()+ 20;
+       return getPizza().price() + 20;
     }
 }
