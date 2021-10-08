@@ -15,6 +15,8 @@ public class ChainOfResponsiblity {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+        /* Örnek - 1: */ 
         CompilerCor compiler = new Lexical().setSuccessor(
                 new Semantic().setSuccessor(
                         new IntermediateCode().setSuccessor(
@@ -23,6 +25,14 @@ public class ChainOfResponsiblity {
                                 ))));
         
           compiler.Handle();
+        
+        
+ /* Örnek - 2: */
+        OperationCor operation = new Chain1()
+                .addSuccessor(new Chain2().addSuccessor(
+                        new Chain3().addSuccessor(
+                                new Chain0())));
+        
+        operation.process();
     }
-
 }
