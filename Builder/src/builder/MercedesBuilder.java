@@ -20,7 +20,7 @@ public class MercedesBuilder implements ICarBuilder{
 
     @Override
     public void setBrand() {
-      car.setBrand("Mercedes");
+       car.setBrand("Mercedes");
     }
 
     @Override
