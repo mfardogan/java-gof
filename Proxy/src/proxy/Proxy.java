@@ -16,18 +16,19 @@ public class Proxy {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       
-        Person person = new Person("Ahmet", "Soylu", true);
-        Person person2 = new Person("Mehmet", "Soylu", false);
-
-        /*
-        Vehicle vehicle = new Vehicle();
-        vehicle.drive(person);
-        vehicle.drive(person2);
-        */
         
-        VehicleProxy proxy = new VehicleProxy();
-        proxy.drive(person);
-        proxy.drive(person2);
+        Person ahmet = new Person();
+        ahmet.setName("Ahmet");
+        ahmet.setSurname("Soylu");
+        ahmet.setHasDriverLicense(true);
+        
+        Person mehmet = new Person();
+        mehmet.setName("Mehmet");
+        mehmet.setSurname("Soylu");
+        mehmet.setHasDriverLicense(false);
+        
+        VehicleProxy vehicle = new VehicleProxy();
+        vehicle.drive(mehmet);
+        vehicle.drive(ahmet);
     }
 }

@@ -10,26 +10,31 @@ package proxy;
  * @author mfard
  */
 public class Person {
-
-    private final String name;
-    private final String surname;
-    private final boolean hasADriverLicense;
-
-    public Person(String name, String surname, boolean hasADriverLicense) {
-        this.name = name;
-        this.surname = surname;
-        this.hasADriverLicense = hasADriverLicense;
-    }
+    private String name;
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setHasDriverLicense(boolean hasDriverLicense) {
+        this.hasDriverLicense = hasDriverLicense;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public boolean isHasADriverLicense() {
-        return hasADriverLicense;
+    public boolean isHasDriverLicense() {
+        return hasDriverLicense;
     }
+    private String surname;
+    private boolean hasDriverLicense;
 }

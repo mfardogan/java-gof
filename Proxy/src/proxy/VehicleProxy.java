@@ -15,10 +15,11 @@ public class VehicleProxy implements IVehicle {
 
     @Override
     public void drive(Person person) {
-        if (person.isHasADriverLicense()) {
-            vehicle.drive(person);
-        } else {
-            System.out.println("Bu kişi araç sürmek için uygun değil!");
+        if (!person.isHasDriverLicense()) {
+            System.out.println("Bu kişi araç kullanamaz!");
+            return;
         }
+
+        vehicle.drive(person);
     }
 }

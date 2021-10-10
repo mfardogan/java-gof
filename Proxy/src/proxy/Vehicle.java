@@ -9,11 +9,10 @@ package proxy;
  *
  * @author mfard
  */
-public class Vehicle implements IVehicle {
+public class Vehicle implements IVehicle{
 
     @Override
     public void drive(Person person) {
-        System.out.println(person.getName() + " "
-                + person.getSurname() + " aracı kullanıyor...");
-    }
+        System.out.println(person.getName() + " " + person.getSurname() + " aracı kullanıyor...");
+    }  
 }
